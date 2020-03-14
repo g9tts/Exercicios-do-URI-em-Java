@@ -1,0 +1,24 @@
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Main {
+	
+	public static void main(String[] args) {
+		
+		Locale.setDefault(Locale.US);
+		Scanner scan = new Scanner(System.in);
+		
+		int horasgastas = scan.nextInt();
+		int velocidade = scan.nextInt();
+		
+		int km = horasgastas * velocidade;
+		
+		double Litrosgastos = km/12.0;
+		
+		System.out.printf("%.3f%n", Litrosgastos);
+		
+		
+		scan.close();
+	}
+
+}
